@@ -3,8 +3,8 @@ language: node_js
 node_js:
   - 'stable'
 services:
- - postgresql
- 
+ - postgres
+
 cache:
   directories:
     - 'node_modules'
