@@ -1,6 +1,7 @@
 language: node_js
-# node_js:
-#  - 'nvm ls-remote'
+
+node_js:
+  - node
 services:
  - postgresql
 # before_script:
