@@ -3,17 +3,17 @@ var router = express.Router();
 var fetch = require("node-fetch");
 var Food = require("../../../models").Food
 
-
-/* GET all foods */
-router.get('/', function(req, res, next) {
-  res.setHeader('Content-Type', 'application/json');
+/* GET all games */
+router.get("/", function(req, res, next) {
   Food.findAll()
-    .then(food => {
-      console.log("FOOD", food)
-      res.status(200).send(JSON.stringify(food));
+    .then(foods => {
+      res.setHeader("Content-Type", "application/json");
+      res.status(200).send(JSON.stringify(foods));
     })
     .catch(error => {
+      res.setHeader("Content-Type", "application/json");
       res.status(500).send({error})
     });
-})
- module.exports = router;
+});
+
+module.exports = router; //this should stay at the bottom of the file
