@@ -3,6 +3,7 @@ var request = require("supertest");
 var app = require('../app');
 var Food = require("../models").Food
 
+
 describe('api', () => {
   beforeAll(() => {
     shell.exec('npx sequelize db:create --env test')
@@ -38,6 +39,25 @@ describe('api', () => {
      return request(app).get('/api/v1/foods/1')
      .then(response => {
        expect(response.statusCode).toBe(200)
+     })
+   });
+ });
+
+ describe("PATCH /foods/1", () => {
+   test("should return a 201", () => {
+     return request(app).patch('/api/v1/foods/1')
+     .then(response => {
+       name: response.body.name
+       expect(response.statusCode).toBe(201)
+     })
+   });
+   });
+
+describe('Delete  food by id ', () => {
+  test("should return a 200", () => {
+    return request(app).delete('/api/v1/foods/1')
+    .then(response => {
+    expect(response.statusCode).toBe(204)
      })
    });
  });
