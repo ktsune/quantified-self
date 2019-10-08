@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "test": "jest --config ./jest.config.js --forceExit --coverage --watch"
+    "test": "jest"
   },
   "dependencies": {
     "bcrypt": "^3.0.6",
