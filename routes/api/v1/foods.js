@@ -3,7 +3,7 @@ var router = express.Router();
 var fetch = require("node-fetch");
 var Food = require("../../../models").Food
 
-/* GET all games */
+/* GET all foods */
 router.get("/", function(req, res, next) {
   Food.findAll()
     .then(foods => {
@@ -16,6 +16,7 @@ router.get("/", function(req, res, next) {
     });
 });
 
+/* GET one food */
 router.get("/:id", function(req, res, next) {
   Food.findOne({
         where: {id: req.params.id}
