@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "test": "jest"
+    "test": "jest",
+    "build": "NODE_ENV=production webpack --config webpack/webpack.config.prod.js  --colors",
   },
   "dependencies": {
     "bcrypt": "^3.0.6",
