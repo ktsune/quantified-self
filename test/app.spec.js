@@ -23,9 +23,9 @@ describe('api', () => {
     });
   });
 
-  describe("Test Foods Path", () => {
+  describe('Test foods Path', () => {
    test("should return a 200", () => {
-     return request(app).get('/foods')
+     return request(app).get('/api/v1/foods')
      .then(response => {
        expect(response.statusCode).toBe(200)
      })
