@@ -31,4 +31,13 @@ describe('api', () => {
      })
    });
  });
+
+  describe('Test food by id Path', () => {
+   test("should return a 200", () => {
+     return request(app).get('/api/v1/foods/1')
+     .then(response => {
+       expect(response.statusCode).toBe(200)
+     })
+   });
+ });
 });
