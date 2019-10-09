@@ -2,6 +2,7 @@ var shell = require('shelljs');
 var request = require("supertest");
 var app = require('../app');
 var Food = require("../models").Food
+var Meal = require("../models").Meal
 
 describe('api', () => {
   beforeAll(() => {
@@ -15,6 +16,7 @@ describe('api', () => {
   afterEach(() => {
     shell.exec('npx sequelize db:migrate:undo:all --env test')
   });
+});
 
   describe('Test the root path', () => {
     test('should return a 200', () => {
@@ -56,4 +58,24 @@ describe('api', () => {
      })
    });
  });
+
+ describe('Test user can get a list of meals path', () => {
+  test("should return a 200", () => {
+    return Food.create({
+      name: "Cheese",
+      calories: 400
+    })
+    .then(food => {
+      return Meal.create({
+        name: "Breakfast",
+        foods: food 
+      })
+    })
+    .then(meal => {
+      return request(app).get('/api/v1/meals')
+    })
+    .then(response => {
+      expect(response.statusCode).toBe(200)
+    })
+  });
 });
