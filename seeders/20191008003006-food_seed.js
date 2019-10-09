@@ -21,13 +21,9 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date()
         },
-
         ], {});
       },
-
-
-    down: (queryInterface, Sequelize) => {
-      return queryInterface.bulkDelete('Food', null, {});
-
+  down: (queryInterface, Sequelize) => {
+    return queryInterface.bulkDelete('Food', null, {});
   }
 };
