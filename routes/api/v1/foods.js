@@ -36,7 +36,6 @@ router.post("/", function(req, res, next) {
         calories: req.body.calories
       })
       .then(food => {
-        console.log('FOOD', food)
         res.status(201).send(JSON.stringify(food));
     })
     .catch(error => {
