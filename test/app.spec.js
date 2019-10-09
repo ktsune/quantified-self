@@ -2,7 +2,6 @@ var shell = require('shelljs');
 var request = require("supertest");
 var app = require('../app');
 var Food = require("../models").Food
-var Meal = require("../models").Meal
 
 
 describe('api', () => {
@@ -88,7 +87,7 @@ describe('Delete  food by id ', () => {
     .then(food => {
       return Meal.create({
         name: "Breakfast",
-        foods: food 
+        foods: food
       })
     })
     .then(meal => {
