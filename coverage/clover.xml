@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1570652928445" clover="3.2.0">
-  <project timestamp="1570652928445" name="All files">
-    <metrics statements="102" coveredstatements="85" conditionals="9" coveredconditionals="6" methods="27" coveredmethods="15" elements="138" coveredelements="106" complexity="0" loc="102" ncloc="102" packages="4" files="8" classes="8"/>
+<coverage generated="1570673267349" clover="3.2.0">
+  <project timestamp="1570673267349" name="All files">
+    <metrics statements="125" coveredstatements="93" conditionals="11" coveredconditionals="6" methods="38" coveredmethods="17" elements="174" coveredelements="116" complexity="0" loc="125" ncloc="125" packages="4" files="9" classes="9"/>
     <package name="quantified-self">
       <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="app.js" path="/Users/willthompson/turing/mod_4/projects/quantified-self/app.js">
@@ -28,7 +28,7 @@
       </file>
     </package>
     <package name="quantified-self.models">
-      <metrics statements="30" coveredstatements="29" conditionals="9" coveredconditionals="6" methods="7" coveredmethods="7"/>
+      <metrics statements="34" coveredstatements="33" conditionals="9" coveredconditionals="6" methods="9" coveredmethods="9"/>
       <file name="food.js" path="/Users/willthompson/turing/mod_4/projects/quantified-self/models/food.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="2" count="1" type="stmt"/>
@@ -50,12 +50,12 @@
         <line num="13" count="0" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
-        <line num="21" count="3" type="cond" truecount="3" falsecount="0"/>
-        <line num="24" count="2" type="stmt"/>
-        <line num="25" count="2" type="stmt"/>
+        <line num="21" count="4" type="cond" truecount="3" falsecount="0"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
-        <line num="29" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="30" count="2" type="stmt"/>
+        <line num="29" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="30" count="3" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
@@ -67,6 +67,13 @@
         <line num="7" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
+      </file>
+      <file name="mealfood.js" path="/Users/willthompson/turing/mod_4/projects/quantified-self/models/mealfood.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
       </file>
     </package>
     <package name="quantified-self.routes">
@@ -89,7 +96,7 @@
       </file>
     </package>
     <package name="quantified-self.routes.api.v1">
-      <metrics statements="43" coveredstatements="29" conditionals="0" coveredconditionals="0" methods="18" coveredmethods="8"/>
+      <metrics statements="62" coveredstatements="33" conditionals="2" coveredconditionals="0" methods="27" coveredmethods="8"/>
       <file name="foods.js" path="/Users/willthompson/turing/mod_4/projects/quantified-self/routes/api/v1/foods.js">
         <metrics statements="32" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="15" coveredmethods="8"/>
         <line num="1" count="1" type="stmt"/>
@@ -123,21 +130,40 @@
         <line num="66" count="0" type="stmt"/>
         <line num="69" count="1" type="stmt"/>
         <line num="70" count="1" type="stmt"/>
-        <line num="74" count="1" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
       </file>
       <file name="meals.js" path="/Users/willthompson/turing/mod_4/projects/quantified-self/routes/api/v1/meals.js">
-        <metrics statements="11" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <metrics statements="30" coveredstatements="11" conditionals="2" coveredconditionals="0" methods="12" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="74" count="1" type="stmt"/>
       </file>
     </package>
   </project>

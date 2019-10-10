@@ -11,7 +11,7 @@ router.get("/", function(req, res, next) {
     include: [{
       model: Food,
       as: 'foods'
-    }],
+    }]
   })
   .then(meals => {
     res.status(200).send(JSON.stringify(meals));
@@ -45,11 +45,11 @@ router.post('/:meal_id/foods/:id', function(req, res, next) {
    MealFood.create({
       meal_id: req.params.meal_id,
       food_id: req.params.id
-    });
+    })
 
   .then(mealFood => {
     res.status(201).send(JSON.stringify(mealFood));
-    });
+    })
 
   .catch(error => {
     res.setHeader("Content-Type", "application/json");
