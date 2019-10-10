@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
   Food.associate = function(models) {
     // associations can be defined here
     Food.belongsToMany(models.Meal, {
-    through: 'MealFood',
+    through: 'MealFoods',
     as: 'meals',
     foreignKey: 'food_id',
     otherKey: 'meal_id'
