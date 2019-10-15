@@ -38,37 +38,35 @@ router.get("/:meal_id/foods", function(req, res, next) {
   });
 });
 
-
 router.post('/:meal_id/foods/:id', function(req, res, next) {
   res.setHeader('Content-Type', 'application/json');
   Food.findOne({ where: {id: req.params.id}});
-   MealFood.create({
-      meal_id: req.params.meal_id,
-      food_id: req.params.id
-    })
+  MealFood.create({
+    meal_id: req.params.meal_id,
+    food_id: req.params.id
+  })
 
   .then(mealFood => {
     res.status(201).send(JSON.stringify(mealFood));
-    })
+  })
 
   .catch(error => {
     res.setHeader("Content-Type", "application/json");
     res.status(404).send({error})
-    });
+  });
 });
 
-
-  router.delete("/:meal_id/foods/:id", function(req, res, next) {
-    MealFood.destroy({
-      where: {food_id: req.params.id} && {meal_id: req.params.meal_id}
-    })    .then(meal => {
-      res.setHeader("Content-Type", "application/json");
-      res.status(204).send(JSON.stringify(meal));
-    })
-    .catch(error => {
-      res.setHeader("Content-Type", "application/json");
-      res.status(404).send({error})
-    });
+router.delete("/:meal_id/foods/:id", function(req, res, next) {
+  MealFood.destroy({
+    where: {food_id: req.params.id} && {meal_id: req.params.meal_id}
+  })    .then(meal => {
+    res.setHeader("Content-Type", "application/json");
+    res.status(204).send(JSON.stringify(meal));
+  })
+  .catch(error => {
+    res.setHeader("Content-Type", "application/json");
+    res.status(404).send({error})
   });
+});
 
-  module.exports = router; //this should stay at the bottom of the file
+module.exports = router; //this should stay at the bottom of the file

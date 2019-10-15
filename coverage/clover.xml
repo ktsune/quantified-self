@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1570673267349" clover="3.2.0">
-  <project timestamp="1570673267349" name="All files">
+<coverage generated="1570743542479" clover="3.2.0">
+  <project timestamp="1570743542479" name="All files">
     <metrics statements="125" coveredstatements="93" conditionals="11" coveredconditionals="6" methods="38" coveredmethods="17" elements="174" coveredelements="116" complexity="0" loc="125" ncloc="125" packages="4" files="9" classes="9"/>
     <package name="quantified-self">
       <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -150,20 +150,20 @@
         <line num="26" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
         <line num="43" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
         <line num="55" count="0" type="stmt"/>
-        <line num="56" count="0" type="stmt"/>
-        <line num="61" count="1" type="stmt"/>
-        <line num="62" count="0" type="stmt"/>
-        <line num="65" count="0" type="stmt"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="69" count="0" type="stmt"/>
-        <line num="70" count="0" type="stmt"/>
-        <line num="74" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
       </file>
     </package>
   </project>
