@@ -20,7 +20,7 @@
     "password": null,
     "database": "quantified_self_production",
     "host": "127.0.0.1",
-    "dialect": "postger",
+    "dialect": "postgres",
     "operatorsAliases": false
   }
 }
