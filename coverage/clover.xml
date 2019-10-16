@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1571189647415" clover="3.2.0">
-  <project timestamp="1571189647415" name="All files">
+<coverage generated="1571175645690" clover="3.2.0">
+  <project timestamp="1571175645690" name="All files">
     <metrics statements="125" coveredstatements="110" conditionals="11" coveredconditionals="8" methods="38" coveredmethods="27" elements="174" coveredelements="145" complexity="0" loc="125" ncloc="125" packages="4" files="9" classes="9"/>
     <package name="quantified-self">
       <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
