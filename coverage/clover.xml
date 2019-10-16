@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1571189647415" clover="3.2.0">
-  <project timestamp="1571189647415" name="All files">
-    <metrics statements="125" coveredstatements="110" conditionals="11" coveredconditionals="8" methods="38" coveredmethods="27" elements="174" coveredelements="145" complexity="0" loc="125" ncloc="125" packages="4" files="9" classes="9"/>
+<coverage generated="1571190819127" clover="3.2.0">
+  <project timestamp="1571190819128" name="All files">
+    <metrics statements="118" coveredstatements="104" conditionals="11" coveredconditionals="8" methods="37" coveredmethods="27" elements="166" coveredelements="139" complexity="0" loc="118" ncloc="118" packages="4" files="8" classes="8"/>
     <package name="quantified-self">
-      <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="app.js" path="/Users/willthompson/turing/mod_4/projects/quantified-self/app.js">
-        <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -13,18 +13,16 @@
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
       </file>
     </package>
     <package name="quantified-self.models">
@@ -77,16 +75,8 @@
       </file>
     </package>
     <package name="quantified-self.routes">
-      <metrics statements="10" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="index.js" path="/Users/willthompson/turing/mod_4/projects/quantified-self/routes/index.js">
-        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-      </file>
-      <file name="users.js" path="/Users/willthompson/turing/mod_4/projects/quantified-self/routes/users.js">
         <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
