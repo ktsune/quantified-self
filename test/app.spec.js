@@ -79,7 +79,6 @@ describe('api', () => {
     test("should return a 200", () => {
       return request(app).get('/api/v1/meals')
       .then(response => {
-        console.log(response.body)
         expect(response.statusCode).toBe(200)
       })
     });
@@ -89,7 +88,6 @@ describe('api', () => {
     test("should return a 200", () => {
       return request(app).get('/api/v1/meals/1/foods')
       .then(response => {
-        console.log(response.body)
         expect(response.statusCode).toBe(200)
       })
     });
@@ -99,7 +97,6 @@ describe('api', () => {
     test("should return a 200", () => {
       return request(app).post('/api/v1/meals/1/foods/2')
       .then(response => {
-        console.log(response.body)
         expect(response.statusCode).toBe(201)
       })
     });
@@ -109,7 +106,6 @@ describe('api', () => {
     test("should return a 200", () => {
       return request(app).delete('/api/v1/meals/1/foods/1')
       .then(response => {
-        console.log(response.body)
         expect(response.statusCode).toBe(204)
       })
     });
