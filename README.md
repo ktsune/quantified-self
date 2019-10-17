@@ -1,6 +1,10 @@
 # quantified_self
 
-This project builds out food & meal endpoints to display json responses of said data.
+This project builds out food & meal endpoints to display json responses of said data. 
+
+View our project board here:
+
+https://github.com/ktsune/quantified-self/projects/1
 
 ## Visit our app on Heroku
 
