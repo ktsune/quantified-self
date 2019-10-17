@@ -43,12 +43,30 @@ describe('api', () => {
     });
   });
 
+  describe('Test food by id Path', () => {
+    test("should return a 200", () => {
+      return request(app).get('/api/v1/foods/123')
+      .then(response => {
+        expect(response.statusCode).toBe(404)
+      })
+    });
+  });
+
   describe("PATCH /foods/1", () => {
     test("should return a 201", () => {
-      return request(app).patch('/api/v1/foods/1')
+      return request(app).put('/api/v1/foods/1')
       .then(response => {
         name: response.body.name
         expect(response.statusCode).toBe(201)
+      })
+    });
+  });
+  describe("PATCH /foods/1000", () => {
+    test("should return a 201", () => {
+      return request(app).put('/api/v1/foods/1000')
+      .then(response => {
+        name: response.body.name
+        expect(response.statusCode).toBe(400)
       })
     });
   });
@@ -60,6 +78,7 @@ describe('api', () => {
       })
     });
   });
+
   describe('Test user can create a new food', () => {
     test("should return a 201", () => {
       return Food.create({
@@ -75,6 +94,21 @@ describe('api', () => {
     });
   });
 
+  describe('Test user can create a new food', () => {
+    test("should return a 404", () => {
+       Food.create({
+        name: "",
+        calories: ""
+      })
+      .then(food => {
+        return request(app).post('/api/v1/foods')
+      })
+      .then(response => {
+        expect(response.statusCode).toBe(404)
+      })
+    });
+  });
+
   describe('Test meals Path', () => {
     test("should return a 200", () => {
       return request(app).get('/api/v1/meals')
@@ -83,6 +117,7 @@ describe('api', () => {
       })
     });
   });
+
 
   describe('Test meals Path', () => {
     test("should return a 200", () => {
@@ -102,12 +137,13 @@ describe('api', () => {
     });
   });
 
-  describe('Test meals Path', () => {
-    test("should return a 200", () => {
+  describe('Test delete food from meals Path', () => {
+    test("should return a 204", () => {
       return request(app).delete('/api/v1/meals/1/foods/1')
       .then(response => {
         expect(response.statusCode).toBe(204)
       })
     });
   });
+
 });
