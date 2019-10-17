@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "test": "jest --config ./jest.config.js --forceExit --coverage",  
+    "test": "jest --config ./jest.config.js --forceExit --coverage",
     "heroku-postbuild": "npm install --production"
   },
   "dependencies": {
