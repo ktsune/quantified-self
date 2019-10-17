@@ -28,7 +28,6 @@ describe('api', () => {
     test("should return a 200", () => {
       return request(app).get('/api/v1/foods')
       .then(response => {
-        console.log(response.body)
         expect(response.statusCode).toBe(200)
       })
     });
